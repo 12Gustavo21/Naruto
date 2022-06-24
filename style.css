@@ -208,7 +208,20 @@ footer {
     }
 }
 
-@media(max-width: 600px) {
+@media(max-width: 768px) {
+    .textMain{
+        margin-left: 2vh;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+    }
+    .textFooter p {
+        font-size: 4vh;
+        margin-left: 5vh
+    }
+}
+
+@media(max-width: 425px) {
     header nav {
         display: none;
     }
@@ -233,16 +246,25 @@ footer {
         display: none;
     }
 
+    .title{
+        height: 0;
+    }
+
     .title h1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        font-size: 4.5vw;
     }
 
     .waterMain {
-        display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+
+    h2{
+        font-size: 1.5em;
+    }
+
+    footer{
+        margin-top: 0;
     }
 }
