@@ -10,14 +10,15 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    text-decoration: none;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     background: #da812f;
     width: 16px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background: #e6a441;
     border-radius: 50px;
 }
@@ -90,8 +91,17 @@ li:hover {
     text-shadow: 5px 5px 5px #fff;
 }
 
-a {
-    text-decoration: none;
+main {
+    width: 100%;
+    position: relative;
+}
+
+.waterMain {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    margin-top: 1vh;
 }
 
 h2 {
@@ -111,19 +121,6 @@ h2 {
     border: solid;
     height: 75vh;
     width: 100%;
-}
-
-main {
-    width: 100%;
-    position: relative;
-}
-
-.waterMain {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 80vh;
-    margin-top: 1vh;
 }
 
 .textMain {
@@ -196,25 +193,26 @@ footer {
     font-size: 4vh;
 }
 
-@media(max-width: 2560px){
-    footer{
+@media(max-width: 2560px) {
+    footer {
         margin-top: 50px;
     }
 }
 
-@media(max-width: 1440px){
-    footer{
+@media(max-width: 1440px) {
+    footer {
         margin-top: 50px;
     }
 }
 
 @media(max-width: 768px) {
-    .textMain{
+    .textMain {
         margin-left: 2vh;
         align-items: center;
         justify-content: center;
         width: 50%;
     }
+
     .textFooter p {
         font-size: 4vh;
         margin-left: 5vh
@@ -246,12 +244,13 @@ footer {
         display: none;
     }
 
-    .title{
+    .title {
         height: 0;
+        width: 40%;
     }
 
     .title h1 {
-        font-size: 4.5vw;
+        font-size: 5.5vw;
     }
 
     .waterMain {
@@ -260,11 +259,61 @@ footer {
         flex-direction: column;
     }
 
-    h2{
+    h2 {
         font-size: 1.5em;
     }
 
-    footer{
+    .textMain {
+        margin: 0;
+        font-size: 4vw;
+        width: 70%;
+    }
+
+    footer {
         margin-top: 0;
+    }
+
+    .textFooter {
+        width: 100%;
+        padding: 5%;
+    }
+}
+
+@media (max-width: 375px) {
+    .title {
+        top: 17vh;
+    }
+
+    .waterMain {
+        height: 75%;
+    }
+
+    h2 {
+        height: 0;
+        margin: 30px;
+    }
+
+    .textMain {
+        margin: 0;
+    }
+
+    .textFooter p {
+        font-size: 3vh;
+    }
+}
+
+@media (max-width: 320px) {
+    .title {
+        top: 13vh;
+    }
+
+    h2 {
+        margin: 30px 0 45px;
+    }
+
+    .textMain {
+        font-size: 5.2vw;
+        width: 80%;
+        margin-bottom: 30px;
     }
 }
