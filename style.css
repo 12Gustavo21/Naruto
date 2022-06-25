@@ -41,13 +41,14 @@ header {
     width: 30%;
     height: 20vh;
     font-family: 'Anton', sans-serif;
-    top: 20vh;
+    top: 27vh;
     left: 10%;
 }
 
 .title h1 {
     color: black;
     font-size: 3.5vw;
+    transition: .4s all;
 }
 
 .title h1:hover {
@@ -62,7 +63,7 @@ nav {
     position: absolute;
     width: 42%;
     justify-content: center;
-    top: 40vh;
+    top: 45vh;
     left: 4%;
 }
 
@@ -85,7 +86,7 @@ li {
 }
 
 li:hover {
-    font-size: 2.5vw;
+    font-size: 2vw;
     cursor: pointer;
     transform: translateX(8px);
     text-shadow: 5px 5px 5px #fff;
@@ -105,6 +106,7 @@ main {
 }
 
 h2 {
+    cursor: context-menu;
     display: flex;
     width: 15%;
     height: 10vh;
@@ -165,6 +167,7 @@ footer {
 }
 
 .icons img {
+    cursor: pointer;
     width: 14%;
     height: 10vh;
 
@@ -180,10 +183,11 @@ footer {
 }
 
 .textFooter p {
+    cursor: context-menu;
     font-size: 4vh;
 }
 
-@media(max-width: 1040px){
+@media(max-width: 1040px) {
     .textFooter {
         width: 60%;
     }
@@ -193,7 +197,7 @@ footer {
     }
 }
 
-@media(max-width: 910px){
+@media(max-width: 910px) {
     .textFooter {
         width: 60%;
     }
@@ -203,7 +207,7 @@ footer {
     }
 }
 
-@media(max-width: 840px){
+@media(max-width: 840px) {
     .icons {
         display: none;
     }
@@ -212,13 +216,13 @@ footer {
         display: none;
     }
 
-    .textFooter{
+    .textFooter {
         width: 100%;
         padding: 30px;
     }
 }
 
-@media(max-width: 768px){
+@media(max-width: 768px) {
     nav {
         display: none;
     }
@@ -234,9 +238,13 @@ footer {
     h2 {
         width: 10%;
     }
+
+    .title {
+        top: 20vh;
+    }
 }
 
-@media(max-width: 650px){
+@media(max-width: 650px) {
     .title {
         width: 35%;
         top: 15vh;
@@ -273,8 +281,75 @@ footer {
         font-size: 5vw;
         margin-bottom: 20vh;
     }
+}
 
-    
+@media(max-width: 550px) {
+    .textFooter p {
+        font-size: 3.6vw;
+    }
+}
+
+@media(max-width: 490px) {
+    .title {
+        top: 10vh;
+    }
+
+    .waterMain {
+        height: 75vh;
+    }
+
+    h2 {
+        margin-bottom: 10vh;
+    }
+}
+
+@media(max-width: 425px) {
+    .title {
+        width: 40%;
+    }
+
+    .title h1 {
+        font-size: 6vw;
+    }
+
+    .textMain {
+        font-size: 4.3vw;
+    }
+
+    .textFooter {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textFooter p {
+        font-size: 4.6vw;
+    }
+}
+
+@media(max-width: 380px) {
+    .title {
+        top: 6vh;
+        width: 50%;
+    }
+
+    .title h1 {
+        font-size: 7vw;
+    }
+
+    .waterMain {
+        height: 70vh;
+    }
+
+    h2 {
+        font-size: 6vw;
+        margin-bottom: 9vh;
+    }
+}
+
+@media(max-width: 350px) {
+    .textMain {
+        font-size: 4.7vw;
+    }
 }
 
 @media(max-width: 320px) {
@@ -285,6 +360,23 @@ footer {
     }
 
     .title h1 {
+        font-size: 7vw;
+    }
+
+    .waterMain {
+        height: 75vh;
+    }
+
+    .textMain {
+        font-size: 5.5vw;
+    }
+
+    h2 {
         font-size: 6vw;
+        margin-bottom: 11vh;
+    }
+
+    .textFooter p {
+        font-size: 4.4vw;
     }
 }
