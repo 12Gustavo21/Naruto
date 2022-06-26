@@ -208,21 +208,6 @@ footer {
 }
 
 @media(max-width: 840px) {
-    .icons {
-        display: none;
-    }
-
-    img {
-        display: none;
-    }
-
-    .textFooter {
-        width: 100%;
-        padding: 30px;
-    }
-}
-
-@media(max-width: 768px) {
     nav {
         display: none;
     }
@@ -239,6 +224,50 @@ footer {
         width: 10%;
     }
 
+    .icons {
+        display: none;
+    }
+
+    img {
+        display: none;
+    }
+
+    .redSection {
+        display: none;
+    }
+
+    .redBox {
+        display: none;
+    }
+
+    .title {
+        top: 6vh;
+    }
+
+    .waterMain {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .textMain {
+        margin-top: 0;
+        margin-left: 0;
+        width: 80%;
+        font-size: 3vw;
+    }
+
+    .textFooter {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .textFooter p {
+        font-size: 4vw;
+    }
+}
+
+@media(max-width: 768px) {
     .title {
         top: 20vh;
     }
@@ -254,36 +283,42 @@ footer {
         font-size: 5vw;
     }
 
-    .redSection {
-        display: none;
-    }
-
-    .redBox {
-        display: none;
-    }
-
     .waterMain {
         margin-top: 0;
         height: 90vh;
-        flex-direction: column;
-        align-items: center;
-        justify-content: normal;
     }
 
     .textMain {
         width: 80%;
         font-size: 4vw;
+        margin-top: 35vh;
+        margin-bottom: 40vh;
         margin-left: 0;
         height: 0;
     }
 
     h2 {
         font-size: 5vw;
-        margin-bottom: 20vh;
     }
 }
 
 @media(max-width: 550px) {
+    .title {
+        height: 10vh;
+    }
+
+    .waterMain {
+        height: 85vh;
+    }
+
+    .textMain {
+        margin-top: 30vh;
+    }
+
+    h2 {
+        margin-bottom: 0;
+    }
+
     .textFooter p {
         font-size: 3.6vw;
     }
@@ -292,14 +327,6 @@ footer {
 @media(max-width: 490px) {
     .title {
         top: 10vh;
-    }
-
-    .waterMain {
-        height: 75vh;
-    }
-
-    h2 {
-        margin-bottom: 10vh;
     }
 }
 
@@ -319,6 +346,7 @@ footer {
     .textFooter {
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
 
     .textFooter p {
@@ -336,19 +364,18 @@ footer {
         font-size: 7vw;
     }
 
-    .waterMain {
-        height: 70vh;
-    }
-
     h2 {
         font-size: 6vw;
-        margin-bottom: 9vh;
+        margin-top: 10vh;
+        margin-bottom: 6vh;
     }
-}
 
-@media(max-width: 350px) {
     .textMain {
-        font-size: 4.7vw;
+        margin-top: 20vh;
+    }
+
+    .waterMain {
+        height: 70vh;
     }
 }
 
